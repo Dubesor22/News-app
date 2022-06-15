@@ -3,19 +3,20 @@ import Main from "./components/Main/Main";
 import News from "./components/News/News";
 import Contact from "./components/Contact/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Main />} />
-
-          <Route path="/News" element={<News />} />
-
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
+        <GlobalProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/News" element={<News />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </GlobalProvider>
       </BrowserRouter>
     </div>
   );
