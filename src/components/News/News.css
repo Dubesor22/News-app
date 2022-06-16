@@ -16,8 +16,13 @@
 
 .card {
   border-radius: 10px;
-  flex-direction: column;
   background-color: #f2f2f2;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* h3,

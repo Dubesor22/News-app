@@ -1,0 +1,11 @@
+.container-main-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.message {
+  color: rgb(217, 82, 82);
+  font-size: 1.3em;
+}
