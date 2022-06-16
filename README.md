@@ -1,4 +1,4 @@
-# <center> 📰 React News Page 📰</center>
+# <center> 📰 Not Today - Las Noticias de ayer 📰</center>
 
 ## 📑 Indice
 
@@ -28,7 +28,7 @@
 
 # Sobre el proyecto 🙇‍♀️
 
-Proyecto de crear una App de noticias
+Proyecto de crear una App de noticias con llamada a una API
 
 ## Instalación y despliegue 🤖
 
