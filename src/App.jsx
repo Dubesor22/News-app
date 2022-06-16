@@ -7,7 +7,7 @@ import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <GlobalProvider>
           <Header />

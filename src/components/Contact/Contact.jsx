@@ -10,6 +10,7 @@ const Contact = () => {
   const [btnDisabled, setBtnDisabled] = useState(true);
 
   const [message, setMessage] = useState("");
+  const [messageOk, setMessageOk] = useState("");
 
   const initialState = {
     name: "",
@@ -29,7 +30,7 @@ const Contact = () => {
 
   const handleInputChange = (event) => {
     if (data.name.length < 2) {
-      setMessage("Name must be at least 3 characters");
+      setMessage("el nombre tiene que tener al menos 3 caracteres");
     } else {
       setMessage(null);
       setBtnDisabled(false);
@@ -44,6 +45,7 @@ const Contact = () => {
     console.log(
       "sending data..." + data.name + " " + data.email + " " + data.text + " "
     );
+    setMessageOk("Mensaje enviado correctamente");
 
     clearState();
   };
@@ -121,6 +123,7 @@ const Contact = () => {
             </button>
 
             <span class="message">{message}</span>
+            <span class="message-ok">{messageOk}</span>
           </form>
         </div>
       </div>

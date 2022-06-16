@@ -5,6 +5,7 @@ import logo from "./ntd.jpg";
 const Header = () => {
   return (
     <>
+      {/* <div className="container-fluid"> */}
       <nav className="navbar navbar-dark bg-dark sticky-top">
         <div className="container">
           <Link to="/" className="navbar-brand" rel="./ntd.jpg">
@@ -21,6 +22,7 @@ const Header = () => {
           </Link>
         </div>
       </nav>
+      {/* </div> */}
     </>
   );
 };

@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# <center> 📰 React News Page 📰</center>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📑 Indice
 
-## Available Scripts
+- [Sobre el proyecto](#sobre-el-proyecto)
 
-In the project directory, you can run:
+  - [Instalación y despliegue](#instalacion-y-despliegue)
 
-### `npm start`
+  - [Tecnologías utilizadas](#tecnologias-utilizadas)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Requerimientos](#requerimientos)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Estructura de la página](#estructura-de-la-pagina)
 
-### `npm test`
+- [Documentacion de React](#documentacion-de-react)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Rutas](#rutas)
 
-### `npm run build`
+- [Retos presentados](#retos-presentados)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Agradecimientos](#agradecimientos)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Futura implementaciones](#futuras-implementaciones)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Autor](#autor)
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Sobre el proyecto 🙇‍♀️
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Proyecto de crear una App de noticias
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Instalación y despliegue 🤖
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+Primero instalamos react con la carpeta que contendrá el proyecto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npx create-react-app nombre-aplicacion
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+Una buena idea es instalar esta extensión para acceder a los snippets de React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+```
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+La siguiente herramienta de desarrollador nos permite ver las jerarquías de los componentes de React
 
-### Making a Progressive Web App
+```
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadoplj
+bjfkapdkoienihi?hl=es
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+Deberemos installar el siguiente paquete para poder crear rutas en nuestros componentes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+$ npm install react-router-dom@6
+```
 
-### Deployment
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Instalamos el paquete sass para aplicar reglas anidadas y funciones con variables entre otras cosas
 
-### `npm run build` fails to minify
+```
+$ npm install sass
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+
+<br>
+
+## Tecnologías utilizadas ⛏️
+
+- HTML
+- CSS
+- Boostrap
+- MDN for bootstrap
+- Bootswatch
+- Javascript
+- React
+- React-GlobalContext
+- React-Router
+
+<br>
+
+# Requerimientos 🦂
+
+- Un mini-proyecto de React para practicar todos los elementos básicos de React ya vistos.
+- Implementar una "web de noticias"
+- Uso de [NYT News API](https://developer.nytimes.com/apis).
+- Uso del router React
+- Utilizar componentes anidados (cabecera, home, pie de página, formulario, lista de noticias).
+- Utilizar React Context
+
+<br><br>
+
+## Estructura de la página 🏗️
+
+Cada ruta construye una página con tres componentes: La cabecera y el pie de página son comunes a
+todas ellas. La Cabecera tiene tres botones, con `<Link />`, para acceder a las
+tres rutas.
+
+<br><br>
+
+# Rutas
+
+**Home** `/`
+
+- Un navbar
+- Una imagen central
+- con un boton para proceder
+
+<br>
+
+![Home screenshot](./src/assets/img/main.png)
+
+# Documentación de React 👓
+
+https://es.reactjs.org/docs/getting-started.html
+
+<br>
+
+# Retos presentados 💢
+
+<br>
+
+# Agradecimientos 🤝
+
+<br>
+
+# Futuras implementaciones 🚀
+
+- Añadir más estados
+- perfeccionar el responsive
+
+<br>
+
+# Autor 🐧
+
+David Ubeda Soriano
+
+- https://github.com/dubesor22
