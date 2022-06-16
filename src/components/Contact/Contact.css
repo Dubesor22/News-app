@@ -5,7 +5,19 @@
   padding-top: 2em;
 }
 
+.container-form {
+  background-color: whitesmoke;
+}
+
 .message {
-  color: rgb(217, 82, 82);
+  color: #d95252;
   font-size: 1.3em;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.message-ok {
+  color: rgb(82, 217, 111);
+  font-size: 1.3em;
+  font-weight: bold;
 }

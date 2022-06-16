@@ -7,6 +7,14 @@ const News = () => {
   useEffect(() => {
     getNews();
   }, []);
+
+  if (news.length <= 0) {
+    return (
+      <div class="spinner-border text-dark spin" role="status">
+        <span class="sr-only">.</span>
+      </div>
+    );
+  }
   const noticia = news.map((noticia) => {
     return (
       <div className="card card-noticia container-sm">

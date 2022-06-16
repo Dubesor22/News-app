@@ -14,13 +14,13 @@ const Contact = () => {
   const initialState = {
     name: "",
     email: "",
-    textarea: "",
+    text: "",
   };
 
   const [data, setData] = useState({
     name: "",
     email: "",
-    textarea: "",
+    text: "",
   });
 
   const clearState = () => {
@@ -30,7 +30,6 @@ const Contact = () => {
   const handleInputChange = (event) => {
     if (data.name.length < 2) {
       setMessage("Name must be at least 3 characters");
-      setBtnDisabled(true);
     } else {
       setMessage(null);
       setBtnDisabled(false);
@@ -39,17 +38,13 @@ const Contact = () => {
   };
 
   const handleSubmit = (event) => {
+    setBtnDisabled(true);
     event.preventDefault();
     saveData();
     console.log(
-      "sending data..." +
-        data.name +
-        " " +
-        data.email +
-        " " +
-        data.textarea +
-        " "
+      "sending data..." + data.name + " " + data.email + " " + data.text + " "
     );
+
     clearState();
   };
 
@@ -57,7 +52,7 @@ const Contact = () => {
     <>
       <div className="container container-main-contact">
         <h2 class="form-title">Informar de Una Noticia de Ayer</h2>
-        <div className="container mt-5 border border-3 rounded p-5">
+        <div className="container container-form mt-5 border border-3 rounded p-5">
           <form onSubmit={handleSubmit}>
             <div class="form-outline mb-4">
               <input
@@ -93,11 +88,11 @@ const Contact = () => {
               <textarea
                 placeholder="cuentanos algo..."
                 onChange={handleInputChange}
-                name="textarea"
+                name="text"
                 class="form-control"
                 id="form4Example3"
                 rows="4"
-                value={data.textareat}
+                value={data.text}
               ></textarea>
               <label class="form-label" for="form4Example3">
                 Message
@@ -113,14 +108,14 @@ const Contact = () => {
                 checked
               />
               <label class="form-check-label" for="form4Example4">
-                Send me a copy of this message
+                Enviame Una copia del mensaje
               </label>
             </div>
 
             <button
               type="submit"
               disabled={btnDisabled}
-              class="btn btn-primary btn-block mb-4"
+              class="btn btn-primary btn-block mb-5"
             >
               Send
             </button>

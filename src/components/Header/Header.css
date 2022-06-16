@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.logo {
+  width: 180px;
+  height: 120px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
