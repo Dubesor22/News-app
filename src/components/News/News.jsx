@@ -11,12 +11,6 @@ const News = () => {
     return (
       <div className="card card-noticia container-sm">
         <div class="card-body" key={noticia.id}>
-          <h3 class="card-title">{noticia.title}</h3>
-          <p class="card-text">{noticia.abstract}</p>
-          <p>
-            {noticia.byline}. Published on {noticia.published_date}
-          </p>
-
           {noticia.media.length !== 0 ? (
             <img
               class="card-img-top img-news"
@@ -24,6 +18,12 @@ const News = () => {
               alt="imagen"
             />
           ) : null}
+          <h3 class="card-title">{noticia.title}</h3>
+          <p class="card-text">{noticia.abstract}</p>
+          <p>
+            {noticia.byline}. Published on {noticia.published_date}
+          </p>
+
           <a class="btn btn-primary" href={noticia.url}>
             Enlace a noticia
           </a>
@@ -31,7 +31,7 @@ const News = () => {
       </div>
     );
   });
-  return <div>{noticia}</div>;
+  return <div className="group pagination">{noticia}</div>;
 };
 
 export default News;
