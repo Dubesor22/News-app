@@ -32,7 +32,7 @@ Proyecto de crear una App de noticias con llamada a una API
 
 ## Instalación y despliegue 🤖
 
-Proyecto desplegado en [Vercel]!(https://news-app-three-mu.vercel.app/)
+Proyecto desplegado en [Vercel](https://news-app-three-mu.vercel.app/)
 
 <br>
 
