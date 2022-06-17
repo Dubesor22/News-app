@@ -40,6 +40,12 @@ Primero instalamos react con la carpeta que contendrá el proyecto
 npx create-react-app nombre-aplicacion
 ```
 
+si clonas el repo, no se te olvide hacer:
+
+```
+npm install
+```
+
 <br>
 
 Una buena idea es instalar esta extensión para acceder a los snippets de React
@@ -87,6 +93,7 @@ $ npm install sass
 - React
 - React-GlobalContext
 - React-Router
+- i18next (idioma)
 
 <br>
 
@@ -132,12 +139,14 @@ https://es.reactjs.org/docs/getting-started.html
 - Implementar una lista de noticias con axios fetch
 - cambio de idioma (voluntario)
 - maquetacion de la pagina
+- sobrevivir una semana mas
 
 <br>
 
 # Agradecimientos 🤝
 
 a todos mis compis y los profes. todos los dias absorvo ideas de ellos (COPY PASTEEEEEE).
+ahora enserio... Gracias a las tardes de discord que hacen que puedan entender mejor el framework que hara que tenga un LAMBO.
 
 <br>
 
