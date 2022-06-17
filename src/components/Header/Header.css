@@ -1,5 +1,17 @@
-.navbar {
+.navbar-header {
   background-color: black !important;
+  position: sticky;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -7,4 +19,22 @@
   height: 120px;
   margin-top: -20px;
   margin-bottom: -20px;
+}
+
+/* @media (max-width: 456px) {
+  .navbar-header {
+    width: 456px;
+  }
+} */
+
+.idiomas {
+  display: flex;
+
+  align-items: center;
+  margin-right: 10px;
+}
+
+input,
+label {
+  font-size: 20px;
 }

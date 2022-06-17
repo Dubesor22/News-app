@@ -1,8 +1,8 @@
 .group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  padding: 2em;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  padding: 0.5em;
+  grid-gap: 15px;
   margin-top: 2em;
   border-radius: 10px;
 }
@@ -17,11 +17,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
-/* h3,
-p {
-  margin: 0;
-} */
 
 .btn {
   display: flex;

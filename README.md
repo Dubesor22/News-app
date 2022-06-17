@@ -129,14 +129,21 @@ https://es.reactjs.org/docs/getting-started.html
 
 # Retos presentados 💢
 
+- Implementar una lista de noticias con axios fetch
+- cambio de idioma (voluntario)
+- maquetacion de la pagina
+
 <br>
 
 # Agradecimientos 🤝
+
+a todos mis compis y los profes. todos los dias absorvo ideas de ellos (COPY PASTEEEEEE).
 
 <br>
 
 # Futuras implementaciones 🚀
 
+- ~~Implementar idiomas~~
 - Añadir más estados
 - perfeccionar el responsive
 
