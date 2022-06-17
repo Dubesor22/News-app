@@ -1,5 +1,6 @@
 import "./Contact.css";
 import { useState } from "react";
+import { Navigate } from "react-router-dom";
 
 const Contact = () => {
   let newsInfo = JSON.parse(localStorage.getItem("NOTICIA")) || [];
@@ -48,6 +49,10 @@ const Contact = () => {
     setMessageOk("Mensaje enviado correctamente");
 
     clearState();
+    setTimeout(() => {
+      //redirect to main page
+      Navigate("/News");
+    }, 3000);
   };
 
   return (
